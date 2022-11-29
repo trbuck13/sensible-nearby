@@ -1,4 +1,5 @@
 import ResultItem from "./ResultsItem";
+import styles from "../NearbyWidget/Widget.module.css";
 
 const ResultsList = ({
   loading,
@@ -8,10 +9,12 @@ const ResultsList = ({
   results: any[];
 }) => {
   return (
-    <div className="results-list">
+    <div className={styles.results}>
       {loading ? (
         <div>Loading...</div>
       ) : (
+        !loading &&
+        results &&
         results.map((result) => (
           <ResultItem key={result.place_id} result={result} />
         ))

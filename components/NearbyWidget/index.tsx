@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import LocationSelectInput from "./LocationSelectInput";
 import ResultsList from "./ResultsList";
 import TextInput from "./TextInput";
+import styles from "./Widget.module.css";
 
 const NearbyWidget = () => {
   const [location, setLocation] = useState("39.2130,-106.9378");
@@ -42,7 +43,7 @@ const NearbyWidget = () => {
   }, [location, search]);
 
   return (
-    <div>
+    <div className={styles.widgetContainer}>
       <div>
         <LocationSelectInput onChange={handleLocationChange} />
         <TextInput value={search} onChange={handleSearchChange} />

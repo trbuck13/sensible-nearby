@@ -1,0 +1,21 @@
+.widgetContainer {
+  margin-top: 50px;
+  padding: 20px;
+  background: #f3f3f3;
+  border: 1px solid #e3e3e3;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.218);
+  border-radius: 10px;
+}
+
+.results {
+  height: 500px;
+  overflow: scroll;
+}
+
+.resultItem {
+  border: 1px solid #e3e3e3;
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+}
