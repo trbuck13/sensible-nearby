@@ -39,6 +39,9 @@ const NearbyWidget = () => {
   };
 
   useEffect(() => {
+    if (!search) {
+      return;
+    }
     fetchResults();
   }, [location, search]);
 

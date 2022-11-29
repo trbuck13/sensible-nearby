@@ -9,9 +9,10 @@ const TextInput = ({
 }) => {
   return (
     <div className={styles.formControl}>
-      <label htmlFor="keyword">Search:</label>
+      <label htmlFor="keyword">Keyword:</label>
       <input
         type="text"
+        placeholder="hiking"
         name="keyword"
         id="keyword"
         value={value}

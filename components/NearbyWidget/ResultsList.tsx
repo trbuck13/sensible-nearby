@@ -11,7 +11,7 @@ const ResultsList = ({
   return (
     <div className={styles.results} tabIndex={0}>
       {loading ? (
-        <div>Loading...</div>
+        <div className={styles.stateText}>Loading...</div>
       ) : (
         !loading &&
         results &&
@@ -19,7 +19,9 @@ const ResultsList = ({
           <ResultItem key={result.place_id} result={result} />
         ))
       )}
-      {results.length === 0 && !loading && <div>No results found</div>}
+      {results.length === 0 && !loading && (
+        <div className={styles.stateText}>No results found</div>
+      )}
     </div>
   );
 };
