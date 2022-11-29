@@ -9,11 +9,11 @@ const NearbyWidget = () => {
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  const handleLocationChange = (e) => {
+  const handleLocationChange = (e: React.BaseSyntheticEvent) => {
     setLocation(e.target.value);
   };
 
-  const handleSearchChange = (e) => {
+  const handleSearchChange = (e: React.BaseSyntheticEvent) => {
     setSearch(e.target.value);
   };
 

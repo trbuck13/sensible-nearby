@@ -1,6 +1,12 @@
 import ResultItem from "./ResultsItem";
 
-const ResultsList = ({ loading, results }) => {
+const ResultsList = ({
+  loading,
+  results,
+}: {
+  loading: boolean;
+  results: any[];
+}) => {
   return (
     <div className="results-list">
       {loading ? (

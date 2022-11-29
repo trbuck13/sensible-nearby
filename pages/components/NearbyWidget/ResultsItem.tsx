@@ -1,4 +1,8 @@
-const ResultItem = ({ result }) => {
+const ResultItem = ({
+  result,
+}: {
+  result: { name: string; address: string };
+}) => {
   return (
     <div className="result-item">
       <div className="result-item__name">{result.name}</div>
