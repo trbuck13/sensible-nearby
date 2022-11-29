@@ -11,7 +11,7 @@ const ResultItem = ({
   };
 }) => {
   return (
-    <div className={styles.resultItem}>
+    <div className={styles.resultItem} tabIndex={0}>
       <div className={styles.spaceBetween}>
         <div>
           <div className={styles.resultItemName}>

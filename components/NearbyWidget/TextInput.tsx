@@ -1,5 +1,5 @@
 import React from "react";
-
+import styles from './Widget.module.css';
 const TextInput = ({
   value,
   onChange,
@@ -8,16 +8,17 @@ const TextInput = ({
   onChange: (e: any) => void;
 }) => {
   return (
-    <>
-      <label htmlFor="location">Search:</label>
+    <div className={styles.formControl}>
+      <label htmlFor="keyword">Search:</label>
       <input
         type="text"
-        name="location"
-        id="location"
+        name="keyword"
+        id="keyword"
         value={value}
         onChange={onChange}
+        className={styles.input}
       />
-    </>
+    </div>
   );
 };
 

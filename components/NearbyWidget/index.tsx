@@ -6,7 +6,7 @@ import styles from "./Widget.module.css";
 
 const NearbyWidget = () => {
   const [location, setLocation] = useState("39.2130,-106.9378");
-  const [search, setSearch] = useState("bar");
+  const [search, setSearch] = useState("");
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -44,7 +44,7 @@ const NearbyWidget = () => {
 
   return (
     <div className={styles.widgetContainer}>
-      <div>
+      <div className={styles.widgetForm}>
         <LocationSelectInput onChange={handleLocationChange} />
         <TextInput value={search} onChange={handleSearchChange} />
       </div>

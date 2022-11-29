@@ -9,7 +9,7 @@ const ResultsList = ({
   results: any[];
 }) => {
   return (
-    <div className={styles.results}>
+    <div className={styles.results} tabIndex={0}>
       {loading ? (
         <div>Loading...</div>
       ) : (
