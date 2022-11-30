@@ -1,5 +1,6 @@
 import React from "react";
-import styles from './Widget.module.css';
+import styles from "./Widget.module.css";
+
 const TextInput = ({
   value,
   onChange,
