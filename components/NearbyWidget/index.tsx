@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import LocationSelectInput from "./LocationSelectInput";
 import ResultsList from "./ResultsList";
 import TextInput from "./TextInput";
